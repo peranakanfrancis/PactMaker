@@ -6,7 +6,7 @@
 <body>
   <%- include('partials/masthead') %>
   <div class="container">
-    <p class="intro">Fill out this form to sign the example agreement. PactMaker automatically generates an example agreement <a href="/example.pdf" target="_blank">here</a>.</p>
+    <p class="intro">Fill out this form to sign the general agreement. We will automatically generates a signed agreement <a href="/example.pdf" target="_blank">here</a>.</p>
 
     <form action="/sign" method="POST">
       <div class="form-row">
@@ -20,7 +20,7 @@
                  class="c-input"
                  size="40"
                  maxlength="100"
-                 placeholder="<%= exampleData.company %>"
+                 placeholder="Dom Himalaya Hotel"
                  oninvalid="this.setCustomValidity('Please enter your company name.')"
                  oninput="setCustomValidity('')"
                  required>
@@ -47,7 +47,7 @@
 
       <div class="form-row">
         <div class="form-label">
-          <label for="country">What country does your company operate in?</label>
+          <label for="country">What country does your property operate in?</label>
         </div>
         <div class="form-field">
           <select id="country"
@@ -336,7 +336,7 @@
                  oninput="setCustomValidity('')"
                  required>
         </div>
-        <p class="form-comment">PactMaker sends out a copy of the agreement, so be sure to use a real email address.</p>
+        <p class="form-comment">HotelBookNepal sends out a copy of the agreement, so be sure to double check your email address.</p>
       </div>
 
       <div class="form-row">

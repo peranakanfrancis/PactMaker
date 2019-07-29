@@ -6,7 +6,7 @@
   "env": {
     "TITLE": {
       "description": "Name of your company or app. This will appear in the header and footer.",
-      "value": "PactMaker"
+      "value": ""
     },
     "POSTMARK_SERVER_TOKEN": {
       "description": "Server tokens can be found under the credentials tab on your Postmark server.",

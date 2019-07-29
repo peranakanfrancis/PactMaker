@@ -1,6 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 <style>
   body {
     line-height: 1.3;
@@ -48,27 +50,119 @@
 </style>
 </head>
 <body>
-  <h1>Agreement</h1>
+  <h1>General Agreement</h1>
 
-  <p>This document was signed by <span class="info"><%= name %></span> on behalf of <span class="info"><%= company %></span>.</p>
+  <p>This agreement is signed between <span class="info"><%= name %></span> on behalf of on behalf of <span class="info"><%= company %></span> and HotelBookNepal (USA) LLC based on both parties equality and mutual benefits. This agreement is made on
+<span class="info"> <%= date %></span>.</p>
+<br>
+  <h2>Room Category and room rate:</h2>
+  <p>Hotel should ensure the rates provided to HotelBookNepal should not be higher than the Public rate. If there is a reduction of the Public rate, Hotel shall update the room rate to HotelBookNepal or via extranet portal successfully 24 hours in advance. Failing which, Hotel should honor the rates set previously with HotelBookNepal. Once the reservation is confirmed, Hotel should ensure a smooth check in upon Guest arrival. In the event of Guest unable to check in into a particular room category with a valid confirmation from Hotel, Hotel should either upgrade Guest to a higher room category, or accommodate Guest to another hotel with same or higher level in the same district. The above upgrade should not cause any surcharge to HotelBookNepal or Guest. Failing which, hotel should compensate first night cost and return the commission of the booking to HotelBookNepal. Hotel will be given HotelBookNepal’s Extranet login ID and password and designate <span class="info"><%= name %></span> as the Extranet contact person.
+  </p>
+  <ul>
+    <li>The Agreement will be auto renewed if no written notice is received by the other party 30 days
+before contract expires.</li>
+    <li>Hotel should investigate and compensate all the lost if the complaint was caused by the hotel.</li>
+    <li>The commission percentage should be calculated as 15% after service charge and tax.</li>
+  </ul>
+<br>
+  <h2>Payment settlement:</h2>
+    <li>1. Credit card information will be provided to hotel upon reservation for hotel to verify and make
+pre-authorization. All the room charges will be paid by guest at hotel upon arrival. Hotel should
+take responsibility to verify and report to HotelBookNepal if credit card is not valid.</li>
+    <li>2. If there is no show case or cancellation within deadline, hotel should charge guests credit card
+directly and pays commission to HotelBookNepal as per normal.</li>
+    <li>3. HotelBookNepal issues invoices to hotel on every 5th of the month. Hotel should settle the payment by
+30th of each month.</li>
+    <li>4. Hotel should cover the remittance fee when transfer commission to HotelBookNepal. HotelBookNepal will cover bank
+charges when collecting commission.</li>
+    <li>5. HotelBookNepal Paypal ID: hello@hotelbooknepal.com</li>
+    <li>6. HotelBookNepal Bank information:</li>
+<br>
+    <div class="table-responsive">
 
+  <!--Table-->
+  <table class="table">
+    <!--Table body-->
+       <tbody>
+         <tr>
+           <th scope="row">Bank Name</th>
+           <td>Bank of America N.A.，Hong Kong Branch</td>
+           </tr>
+         <tr>
+           <th scope="row">Bank Address</th>
+           <td>Level 20, Tower 2, Two International Finance Centre, Floor 42, Hong Kong</td>
+         </tr>
+         <tr>
+           <th scope="row">Swift Code</th>
+           <td>BOFAHKHX</td>
+           </tr>
+         <tr>
+           <th scope="row">Sort Code</th>
+           <td>55757</td>
+         </tr>
+         <tr>
+            <th scope="row">Account No.</th>
+            <td>514071467</td>
+         </tr>
+         <tr>
+            <th scope="row">Account Name</th>
+            <td>HotelBookNepal (USA) LLC</td>
+         </tr>
+         <tr>
+            <th scope="row">Account Address</th>
+            <td>Unit 3002, 30/F., Paul Y. Centre, 51 Hung To Road, Kwun Tong, Kowloon, Hong Kong</td>
+         </tr>
+       </tbody>
+       <!--Table body-->
+
+     </table>
+     <!--Table-->
+
+   </div>
+
+   <h2>On request</h2>
+   <p>Hotel will receive HotelBookNepal reservations as on-request.</p>
+
+   <h2>ANTI-COMMERCIAL BRIBERY</h2>
+   <p>Hotel should not pay any commission, remuneration and brokerage or provide any present or treatment to HotelBookNepal’s employees, except for the advertisement gifts with small value accordant with business practice.
+   (HotelBookNepal reporting telephone: +9779851190991, HotelBookNepal reporting email:partner@hotelbooknepal.com).</p>
+
+   <h2>Others</h2>
+     <li>1. Both parties should not disclose confidential information to 3rd party. Confidential Information
+in this Agreement means the non-disclosure information, including but not limited to commercial
+programs, client lists, technology data, product designs, development plans, staff lists, operation
+manuals, processing techniques, technology theories, inventions, financial conditions, credit card
+information and other materials agreed as confidential when delivered. In the event of violation,
+hotel should undertake all responsibilities, including but not limited to economic losses and loss
+of reputation caused to HotelBookNepal.</li>
+    <li>2. In the event of termination, written notice should be sent to the other party 30 days in advance
+with mutual agreement. If one party alters or terminates this Agreement without the consent of the
+other, the party should compensate the economic and reputational damage caused to the other party.
+This Agreement is not a standard template but a mutually agreed Agreement by both parties.</li>
+    <li>3. The Parties agree to submit to the exclusive jurisdiction of the courts of the China in respect
+of all matters arising out of this Agreement.</li>
+<br>
+<p>This Agreement was duplicated into two copies, and issued to both parties. Both copies are
+effective and bundling after signed by the representatives from both parties.</p>
+<br><br><br><br>
   <div class="signature-block">
     <p class="signature-field"><img src="<%= signature %>" height="55"></p>
-    <p>Name: <%= name %><br>Role: <%= role %><br>Date: <%= date %></p>
+    <p>Name: <%= name %><br>Role: <%= role %><br>Company: <%= company %><br>Date: <%= date %></p>
   </div>
-
+<br>
+    <p><i>For HotelBookNepal internal only</i></p>
   <table class="form" cellpadding="0" cellspacing="0" width="100%">
+<!-- HotelBookNepal -->
     <tr>
-      <td><label>Company name:</label><p><%= company %></p></td>
-      <td><label>Country:</label><p><%= country %></p></td>
+      <td><label>Name:</label><p>Deepak Khanal</p></td>
+      <td><label>Role:</label><p>Managing Director</p></td>
+    <tr>
+      <td><p><b>HotelBookNepal (USA) LLC</b></p></td>
+      <td><label>Dated:</label><p> <%= date %></p></td>
     </tr>
     <tr>
-      <td><label>Name:</label><p><%= name %></p></td>
-      <td><label>Role:</label><p><%= role %></p></td>
-    </tr>
-    <tr>
-      <td colspan="2"><label>Signature:</label><p><img src="<%= signature %>" height="55"></p></td>
-    </tr>
   </table>
 </body>
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
 </html>
